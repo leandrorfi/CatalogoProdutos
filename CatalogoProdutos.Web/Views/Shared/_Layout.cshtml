@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Leandro .net</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+
+<body>
+    <!-- Barra de Navegação -->
+    <nav id="menu-h">
+        <ul>
+            <li><a>@Html.ActionLink("Início", "Index", "Home")</a></li>
+            <li><a>@Html.ActionLink("Produtos", "Catalogo", "Produto")</a></li>
+            <li><a>@Html.ActionLink("Quem Somos", "Contato", "Home")</a></li>
+        </ul>
+    </nav>
+
+    <!-- Botao Whatsapp No Canto da Tela -->
+    <h4 id="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=5517996123117&text=Gostaria%20de%20receber%20mais%20informacoes!" class="icon" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </h4>
+    <div class="container">
+        <div class="navbar navbar-inverse">
+            <img src="~/Imagens/fundo site.jpg" width="100%" height="100" />
+        </div>
+        <div class="row panel">
+            <div id="menu" class="col-xs-2"></div>
+            <div class="col-xs-8">
+                @if (TempData["mensagem"] != null)
+                {
+                    <div class="alert alert-success">@TempData["mensagem"]</div>
+                }
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+</body>
+</html>

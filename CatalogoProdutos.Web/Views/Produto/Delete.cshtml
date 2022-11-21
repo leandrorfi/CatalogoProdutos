@@ -1,0 +1,71 @@
+﻿@model CatalogoProdutos.Dominio.Entidades.Produto
+
+@{
+    ViewBag.Title = "Deletar";
+}
+
+<div class="produtos panel panel-primary">
+    <div class="panel-heading panel-head">Remover Produto</div>
+    <div class="panel-body">
+
+        <h3>Deseja deletar esse registro?</h3>
+        <div>
+            <hr />
+            <dl class="dl-horizontal">
+                @if (Model.Imagem != null)
+                {
+                    <dt>
+                        Imagem
+                    </dt>
+                    <dd>
+                        <img src="@Url.Action("ExibirImagem","Arquivo", new { id = Model.ProdutoId })" width="150" height="150" />
+                    </dd>
+                }
+                else
+                {
+                    <dt>
+                        Imagem
+                    </dt>
+                    <dd>
+                        <img src="~/Imagens/sem-foto.jpg" width="150" height="150" />
+                    </dd>
+                }
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.SKU)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.SKU)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Nome)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Nome)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Descricao)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Descricao)
+                </dd>
+
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Deletar Produto" class="btn btn-danger" /> |
+                    @Html.ActionLink("Retornar", "Catalogo")
+                </div>
+            }
+        </div>
+    </div>
+</div>

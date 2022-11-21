@@ -1,0 +1,66 @@
+﻿@model CatalogoProdutos.Dominio.Entidades.Produto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <hr />
+    <div class="produtos panel panel-primary">
+        <div class="panel-heading panel-head">Detalhe do Produto</div>
+        <div class="panel-body">
+
+            <dl class="dl-horizontal">
+                @if (Model.Imagem != null)
+                {
+                    <dt>
+                        Imagem
+                    </dt>
+                    <dd>
+                        <img src="@Url.Action("ExibirImagem","Arquivo", new { id = Model.ProdutoId })" width="150" height="150" />
+                    </dd>
+                }
+                else
+                {
+                    <dt>
+                        Imagem
+                    </dt>
+                    <dd>
+                        <img src="~/Imagens/sem-foto.jpg" width="150" height="150" />
+                    </dd>
+                }
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.SKU)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.SKU)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Nome)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Nome)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Descricao)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Descricao)
+                    </dd>
+
+                </dl>
+        </div>
+        <p>
+            @Html.ActionLink("Editar", "Edit", new { id = Model.ProdutoId }, new { @class = "btn btn-success" })  |
+            @Html.ActionLink("Retornar", "Catalogo")
+        </p>
+    </div>
+</div>

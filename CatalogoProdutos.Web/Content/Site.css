@@ -1,0 +1,94 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+#menu-h {
+    background-color: rgb(37, 37, 39);
+    margin-top: -50px;
+}
+*
+
+#menu-h ul {
+    list-style: none;
+    padding: 0;
+    background-color: rgb(37, 37, 39);
+    text-align: center;
+}
+
+#menu-h ul li{
+    display: inline;
+    padding: 10px;
+}
+
+#menu-h ul a{
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .3s;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(24, 139, 233)
+}
+
+#menu-h ul li a:last-child a{
+    float: right;
+    background-color: rgb(24, 139, 233);
+}
+
+#whatsapp a{
+    position: fixed;
+    bottom: 65px;
+    right: 30px;
+    font-size: 30px;
+    background-color: #01e675;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 100;
+    box-shadow: 2px 2px 2px #c0bdbd;
+}
+
+#whatsapp icon:hover {
+    background-color: #fff;
+    color: #029e3b;
+    font-weight: 900;
+    box-shadow: 2px 2px 2px #5fe690;
+}
+
+.catalogo-filtro {
+    padding-top: 10px;
+}
+
+#cadastro-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cadastro-label {
+    font-size: 3rem;
+    padding-top: 1rem;
+    max-width: 300px;
+    width: 300px;
+
+}
