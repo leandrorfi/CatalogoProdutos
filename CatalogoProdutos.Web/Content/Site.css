@@ -92,3 +92,7 @@ textarea {
     width: 300px;
 
 }
+
+#div-principal {
+    display: flex;
+}
