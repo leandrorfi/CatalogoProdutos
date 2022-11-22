@@ -106,6 +106,8 @@
     <Content Include="Global.asax" />
     <Content Include="Imagens\fundo site.jpg" />
     <Content Include="Imagens\sem-foto.jpg" />
+    <Content Include="Imagens\xxx1.jpg" />
+    <Content Include="Imagens\xxx2.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -129,8 +131,8 @@
     <Content Include="Views\Produto\Delete.cshtml" />
     <Content Include="Views\Produto\Details.cshtml" />
     <Content Include="Views\Produto\Edit.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Contato.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

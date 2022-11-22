@@ -5,13 +5,13 @@
     <div class="panel panel-primary">
         <div class="panel-heading panel-head" id="cadastro-div">
 
-            <div class="cadastro-label">Cadastro de Produtos</div>
+            <div class="cadastro-label">Lista de Produtos</div>
 
         </div>
         <div class="panel-body">
-            <a id="CriarProduto" href="@Url.Action("Create")" class="btn btn-success">
+            @*<a id="CriarProduto" href="@Url.Action("Create")" class="btn btn-success">
                 <span class="glyphicon glyphicon-plus"></span>Incluir Produto
-            </a>
+            </a>*@
 
             <table>
                 <tr>
@@ -45,9 +45,9 @@
                 <tr>
                     <td>
                         <div class="btn-group">
-                            @Html.ActionLink("Editar", "Edit", new { id = Model.ProdutoId }, new { @class = "btn btn-success" })
+                            @*@Html.ActionLink("Editar", "Edit", new { id = Model.ProdutoId }, new { @class = "btn btn-success" })*@
                             @Html.ActionLink("Detalhes", "Details", new { id = Model.ProdutoId }, new { @class = "btn btn-primary" })
-                            @Html.ActionLink("Deletar", "Delete", new { id = Model.ProdutoId }, new { @class = "btn btn-danger" })
+                            @*@Html.ActionLink("Deletar", "Delete", new { id = Model.ProdutoId }, new { @class = "btn btn-danger" })*@
                         </div>
                     </td>
                 </tr>

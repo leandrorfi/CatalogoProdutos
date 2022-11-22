@@ -21,13 +21,14 @@ textarea {
     background-color: rgb(37, 37, 39);
     margin-top: -50px;
 }
-*
+
 
 #menu-h ul {
     list-style: none;
     padding: 0;
     background-color: rgb(37, 37, 39);
     text-align: center;
+    margin: 0;
 }
 
 #menu-h ul li{
@@ -95,4 +96,48 @@ textarea {
 
 #div-principal {
     display: flex;
+}
+
+.div-imagens {
+    display: flex;
+    margin: 2rem 0 0 15%;
+    border-style: groove;
+    padding-left: 40px;
+}
+
+.index-imagens {
+    margin: 0 2rem;
+}
+
+.index-div-pai {
+    margin: -10px 0 0 0;
+    background-image: linear-gradient(#FFBC46, #FFA810);
+    max-height: 100%;
+    height: 100%;
+}
+
+footer {
+   background-color: rgb(37, 37, 39);
+    padding: 4rem 0;
+    margin: 0 0 -20px 0;
+    color: white;
+    display: flex;
+}
+
+.footer-div {
+    display: flex;
+    margin: 0 0 0 22%;
+}
+
+#footer-instagram-label {
+    margin: 0 10% 0 0;
+}
+
+#texto {
+    color: #000;
+}
+
+#texto-button {
+    color: #000;
+    margin: 10% 0 0 0;
 }
