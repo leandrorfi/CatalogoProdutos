@@ -11,16 +11,15 @@
 
 
 <body>
+    <!-- Barra de Navegação -->
+    <nav id="menu-h">
+        <ul>
+            <li>@Html.ActionLink("Início", "Index", "Home")</li>
+            <li>@Html.ActionLink("Produtos", "Catalogo", "Produto")</li>
+            <li>@Html.ActionLink("Quem Somos", "Contato", "Home")</li>
+        </ul>
+    </nav>
     <div class="index-div-pai">
-        <!-- Barra de Navegação -->
-        <nav id="menu-h">
-            <ul>
-                <li>@Html.ActionLink("Início", "Index", "Home")</li>
-                <li>@Html.ActionLink("Produtos", "Catalogo", "Produto")</li>
-                <li>@Html.ActionLink("Quem Somos", "Contato", "Home")</li>
-            </ul>
-        </nav>
-
         <!-- Botao Whatsapp No Canto da Tela -->
         <h4 id="whatsapp">
             <a href="https://api.whatsapp.com/send?phone=5517996123117&text=Gostaria%20de%20receber%20mais%20informacoes!" class="icon" target="_blank">
