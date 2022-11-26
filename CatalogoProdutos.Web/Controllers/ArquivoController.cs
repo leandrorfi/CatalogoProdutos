@@ -1,4 +1,4 @@
-﻿using CatalogoProdutos.Dominio.Entidades;
+﻿using CatalogoProdutos.Web.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
