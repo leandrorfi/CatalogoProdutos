@@ -130,7 +130,7 @@ textarea {
 .div-imagens {
     display: flex;
     margin: 2rem 0 15% 14%;
-    padding-left: -20px;
+    padding: 0 0 20px -20px;
 }
 
 .index-imagens {
@@ -157,8 +157,12 @@ footer {
     margin: 0 0 0 22%;
 }
 
-#footer-instagram-label {
+#footer-instagram-label p {
     margin: 0 10% 0 0;
+}
+
+#footer-instagram-label div {
+    
 }
 
 #texto {
@@ -170,7 +174,9 @@ footer {
     margin: 10% 0 0 0;
 }
 
-#div-bem-vindo{
+#div-bem-vindo {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #div-bem-vindo h1 {
@@ -209,3 +215,24 @@ footer {
         text-align: left;
         list-style-type: none;
     }
+
+#div-contato {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#div-contato h1{
+  
+    font-size: 60px;
+}
+
+#div-contato h3{
+
+}
+
+#titulo-produtos {
+    margin-left: 25%;
+    padding: 0 0 25px 0;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

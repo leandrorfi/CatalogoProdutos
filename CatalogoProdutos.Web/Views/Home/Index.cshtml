@@ -22,6 +22,7 @@
 
 <body>
     <div class="index-div-pai">
+
         <h4 id="whatsapp">
             <a href="https://api.whatsapp.com/send?phone=5517996123117&text=Gostaria%20de%20receber%20mais%20informacoes!" class="icon" target="_blank">
                 <i class="fab fa-whatsapp"></i>
@@ -68,8 +69,8 @@
         </div>
         <div>
             <div class="row col-md-offset-3">
-                <h4>
-                    <strong><p id="footer-instagram-label" class="col-sm-3 col-form-label text-right">Instagram:</p></strong>
+                <h4 id="footer-instagram-label">
+                    <strong><p class="col-sm-3 col-form-label text-right">Instagram:</p></strong>
                     <div class="col-sm-4 text-left" ">
                         <a href="https://www.instagram.com/westpets.ind/" target="_blank" rel="noopener noreferrer">
                             <button>
@@ -94,13 +95,13 @@
 
                 <!-- Função copiar para botão "Copiar" -->
                 <script>
-                        function copiarTexto() {
-                            let textoCopiado = document.getElementById("texto");
-                            textoCopiado.select();
-                            textoCopiado.setSelectionRange(0, 99999)
-                            document.execCommand("copy");
-                            alert("O email foi copiado para a área de transferência!");
-                        }
+                    function copiarTexto() {
+                        let textoCopiado = document.getElementById("texto");
+                        textoCopiado.select();
+                        textoCopiado.setSelectionRange(0, 99999)
+                        document.execCommand("copy");
+                        alert("O email foi copiado para a área de transferência!");
+                    }
                 </script>
             </div>
         </div>
