@@ -1,19 +1,64 @@
 ﻿@using PagedList.Mvc;
 @model PagedList.IPagedList<CatalogoProdutos.Dominio.Entidades.Produto>
 
-@{ 
+@{
     ViewBag.Title = "Catalogo de Produtos";
 }
 
-@foreach (var p in Model)
-{
-    @Html.Partial("_CatalogoResumo", p)
-}
+<div>
+    <h4 id="icone-paginas">
+        <p style="font-size:22px">
+            <strong>
+                CATEGORIAS
+            </strong>
 
-<p class="text-primary">
-Página @Model.PageNumber de @Model.PageCount
-</p>
+        </p>
 
-<span class="btn-group pull-right">
-    @Html.PagedListPager(Model, pagina => Url.Action("Catalogo", new { pagina }))
-</span>
+        <a href="?pagina=1">
+            Coleiras
+        </a>
+
+        <a href="?pagina=2">
+            Peitorais
+        </a>
+
+        <a href="?pagina=3">
+            Placas
+        </a>
+
+        <a href="?pagina=4">
+            Máquinas
+        </a>
+
+        <a href="?pagina=5">
+            Camas
+        </a>
+
+        <a href="?pagina=6">
+            Arranhador
+        </a>
+    </h4>
+ 
+
+
+
+        <h1 style="margin-left: 25%; padding: 0 0 25px 0; font-size: 50px">
+            <strong>
+                Lista de Produtos
+            </strong>
+        </h1>
+
+        @foreach (var p in Model)
+        {
+            @Html.Partial("_CatalogoResumo", p)
+        }
+
+        <p class="text-primary">
+            Página @Model.PageNumber de @Model.PageCount
+        </p>
+
+        <span class="btn-group pull-right">
+            @Html.PagedListPager(Model, pagina => Url.Action("Catalogo", new { pagina }))
+        </span>
+
+    </div>
