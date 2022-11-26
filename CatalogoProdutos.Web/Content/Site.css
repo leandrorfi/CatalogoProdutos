@@ -54,9 +54,13 @@ textarea {
 }
 
 #icone-paginas {
+    display: inline-block;
+    box-shadow: 10px 20px grey;
+    background-image: linear-gradient(#64D1F5,#4B9CB8);
+    font-family: 'Franklin Gothic';
     position: fixed;
-    bottom: 50%;
-    left: 30px;
+    bottom: 25%;
+    left: 40px;
     font-size: 30px;
     background-color: #003167;
     color: #fff;
@@ -68,6 +72,14 @@ textarea {
     text-decoration: none;
     z-index: 100;
     box-shadow: 2px 2px 2px #c0bdbd;
+}
+
+#icone-paginas a:link {
+    color: yellow;
+}
+
+#icone-paginas a:hover {
+    color: aqua;
 }
 
 #whatsapp a {
