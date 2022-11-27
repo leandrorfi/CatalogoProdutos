@@ -1,11 +1,6 @@
 ﻿@model CatalogoProdutos.Dominio.Entidades.Produto
-
-@{
-    ViewBag.Title = "Details";
-}
-
-<h2>Details</h2>
-
+@{ ViewBag.Title = "Details"; }
+<h2>Detalhes</h2>
 <div>
     <hr />
     <div class="produtos panel panel-primary">
@@ -31,7 +26,6 @@
                         <img src="~/Imagens/sem-foto.jpg" width="150" height="150" />
                     </dd>
                 }
-
                     <dt>
                         @Html.DisplayNameFor(model => model.SKU)
                     </dt>
@@ -55,7 +49,6 @@
                     <dd>
                         @Html.DisplayFor(model => model.Descricao)
                     </dd>
-
                 </dl>
         </div>
         <p>
